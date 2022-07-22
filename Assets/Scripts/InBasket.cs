@@ -14,13 +14,9 @@ public class InBasket : MonoBehaviour
         basketScore = 0;
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        if (tag == ("Ball"))
-        {
-            basketScore++;
-        }
-        
+        basketScore++;
     }
 
     void Update()
